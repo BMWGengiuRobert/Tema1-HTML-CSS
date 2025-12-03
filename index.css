@@ -12,6 +12,7 @@ nav {
   align-items: center;
   border-style: solid;
   border-color: #f1eded;
+  border-width: 2px;
   color: #686666;
 }
 nav .app-title {
@@ -19,4 +20,73 @@ nav .app-title {
 }
 nav .navbar-button {
   font-size: small;
+}
+
+section {
+  margin-top: 2rem;
+  display: flex;
+  padding: 0 10%;
+  gap: 2rem;
+}
+section .left-content {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+section .left-content .new-recipe {
+  background-color: #5cb85c;
+  border-radius: 5px;
+  padding: 0.5rem;
+  font-size: large;
+  width: 20%;
+  border-style: none;
+  color: white;
+}
+section .left-content hr {
+  border-style: solid;
+  width: 100%;
+  border-color: #c1c1c1;
+}
+section .left-content .food-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  color: #c1c1c1;
+}
+section .left-content .food-cards .card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  padding: 1rem;
+}
+section .left-content .food-cards .card .food-info {
+  padding: 0.5rem;
+}
+section .left-content .food-cards .card .food-info .food-title {
+  margin-top: 0;
+  font-size: xx-large;
+  color: black;
+}
+section .left-content .food-cards .card .food-info .food-description {
+  margin-bottom: 0px;
+  font-size: small;
+  color: #686666;
+}
+section .left-content .food-cards .card img {
+  margin: 0.5rem;
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 2px;
+  height: 4rem;
+  width: 8rem;
+}
+section .right-content {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }/*# sourceMappingURL=index.css.map */
