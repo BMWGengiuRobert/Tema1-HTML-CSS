@@ -41,7 +41,7 @@ section {
             border-radius: 5px;
             padding: 0.5rem;
             font-size: large;
-            width: 20%;
+            width: fit-content;
             border-style: none;
             color: white
         }
@@ -100,7 +100,153 @@ section {
         width: 60%;
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        gap: 1rem; //if we use here gap: 3rem; the scroll bar appears but looks like the design picture
 
+        span {
+            font-size: small;
+            font-weight: bold;
+        }
+
+        .recipe-name {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            .recipe-name-buttons {
+                display: flex;
+                gap: 1rem;
+
+                .recipe-name-buttons-save {
+                    background-color: #95d195;
+                }
+
+                .recipe-name-buttons-cancel {
+                    background-color: #d9534f;
+                }
+
+                button {
+                    color: white;
+                    border-style: none;
+                    border-radius: 5px;
+                    padding: 1rem;
+                    padding: 0.7rem;
+                    width: fit-content;
+                    font-size: large;
+                }
+            }
+
+            #name-input {
+                color: #686666;
+                padding: 0.7rem;
+                font-size: large;
+                border-style: solid;
+                border-width: 2px;
+                border-color: #c1c1c1;
+                border-radius: 5px;
+            }
+        }
+
+        .url-section {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            #url-input {
+                color: #686666;
+                padding: 0.7rem;
+                font-size: large;
+                border-style: solid;
+                border-width: 2px;
+                border-color: #c1c1c1;
+                border-radius: 5px;
+            }
+
+        }
+
+        .description-section {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            img {
+                height: auto;
+                width: 30%;
+            }
+
+            #description-input {
+                color: #686666;
+                padding: 0.7rem;
+                font-size: large;
+                border-style: solid;
+                border-width: 2px;
+                border-color: #c1c1c1;
+                border-radius: 5px;
+                height: 8rem;
+            }
+        }
+
+        .ingredients-section {
+            display: flex;
+            flex-direction: column; 
+
+            .input-ingredients {
+                display: flex;
+                gap: 2.5rem;
+                align-items: center;
+                margin-top: 0.5rem;
+                width: 90%;
+
+                input {
+                    color: #686666;
+                    padding: 0.5rem;
+                    font-size: large;
+                    border: 2px solid #c1c1c1;
+                    border-radius: 5px;
+                }
+
+                #ingredient-input {
+                    flex: 1;
+                }
+
+                #amount-input {
+                    width: 5rem;
+                }
+
+                .add-amount-button {
+                    font-size: large;
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    padding: 0.4rem;
+                    border: none;
+                    background-color: #d9534f;
+                    color: white;
+                    border-radius: 5px;
+                }
+
+                &:nth-of-type(2) {
+                    input {
+                        border-color: red;
+                    }
+                }
+            }
+
+            hr {
+                border-style: solid;
+                width: 100%;
+                border-color: #c1c1c1;
+                margin-top: 1.5rem; 
+            }
+
+            .add-ingredient-button {
+                background-color: #5cb85c;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                padding: 0.7rem;
+                font-size: large;
+                width: fit-content;
+                margin-top: 1rem;
+            }
+        }
     }
 }

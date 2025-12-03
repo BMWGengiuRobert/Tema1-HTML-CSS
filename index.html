@@ -36,7 +36,38 @@
             </div>
         </div>
         <div class="right-content">
-            <div>right</div>
+            <div class="recipe-name">
+                <div class="recipe-name-buttons">
+                    <button class="recipe-name-buttons-save">Save</button>
+                    <button class="recipe-name-buttons-cancel">Cancel</button>
+                </div>
+                <label type="text" for="name-input"><span>Name</span></label>
+                <input type="text" name="new-recipe-name" id="name-input" value="Fries">
+            </div>
+            <div class="url-section">
+                <label type="text" for="url-input"><span>Image URL</span></label>
+                <input type="text" name="new-recipe-url" id="url-input"
+                    value="https://upload.wikimedia.org/wikipedia/commons/8/83/French_Fries.JPG">
+            </div>
+            <div class="description-section">
+                <img src="French_Fries.jpg" alt="french fries image" />
+                <label type="text" for="description-input"><span>Description</span></label>
+                <textarea name="new-recipe-description" id="description-input">Cartofi</textarea>
+            </div>
+            <div class="ingredients-section">
+                <div class="input-ingredients">
+                    <input type="text" name="recipe-ingredient" id="ingredient-input" value="Cartofi">
+                    <input type="text" name="recipe-amount" id="amount-input" value="2">
+                    <button class="add-amount-button">X</button>
+                </div>
+                <div class="input-ingredients">
+                    <input type="text" name="recipe-ingredient" id="ingredient-input">
+                    <input type="text" name="recipe-amount" id="amount-input">
+                    <button class="add-amount-button">X</button>
+                </div>
+                <hr>
+                <button class="add-ingredient-button">Add Ingredient</button>
+            </div>
         </div>
     </section>
 </body>
