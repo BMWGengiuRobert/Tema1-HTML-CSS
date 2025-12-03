@@ -1,0 +1,22 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+  background-color: #f8f8f8;
+  display: flex;
+  gap: 3rem;
+  padding: 1rem;
+  align-items: center;
+  border-style: solid;
+  border-color: #f1eded;
+  color: #686666;
+}
+nav .app-title {
+  font-size: x-large;
+}
+nav .navbar-button {
+  font-size: small;
+}/*# sourceMappingURL=index.css.map */
