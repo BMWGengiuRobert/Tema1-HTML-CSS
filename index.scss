@@ -4,7 +4,7 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-nav {
+ul {
     background-color: #f8f8f8;
     display: flex;
     gap: 32px;
@@ -12,6 +12,8 @@ nav {
     align-items: center;
     border: solid #f1eded 2px;
     color: #686666;
+    list-style-type: none;
+    margin-top: 0;
 
     .app-title {
         font-size: 24px;
