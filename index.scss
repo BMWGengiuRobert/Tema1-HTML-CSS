@@ -112,15 +112,15 @@ section {
             flex-direction: column;
             gap: 1rem;
 
-            .recipe-name-buttons {
+            &__buttons {
                 display: flex;
                 gap: 1rem;
 
-                .recipe-name-buttons-save {
+                &__save {
                     background-color: #95d195;
                 }
 
-                .recipe-name-buttons-cancel {
+                &__cancel {
                     background-color: #d9534f;
                 }
 

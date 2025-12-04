@@ -100,17 +100,17 @@ section .right-content .recipe-name {
   flex-direction: column;
   gap: 1rem;
 }
-section .right-content .recipe-name .recipe-name-buttons {
+section .right-content .recipe-name__buttons {
   display: flex;
   gap: 1rem;
 }
-section .right-content .recipe-name .recipe-name-buttons .recipe-name-buttons-save {
+section .right-content .recipe-name__buttons__save {
   background-color: #95d195;
 }
-section .right-content .recipe-name .recipe-name-buttons .recipe-name-buttons-cancel {
+section .right-content .recipe-name__buttons__cancel {
   background-color: #d9534f;
 }
-section .right-content .recipe-name .recipe-name-buttons button {
+section .right-content .recipe-name__buttons button {
   color: white;
   border-style: none;
   border-radius: 5px;
