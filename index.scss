@@ -10,9 +10,7 @@ nav {
     gap: 3rem;
     padding: 1rem;
     align-items: center;
-    border-style: solid;
-    border-color: #f1eded;
-    border-width: 2px;
+    border: solid #f1eded 2px;
     color: #686666;
 
     .app-title {
@@ -42,14 +40,13 @@ section {
             padding: 0.5rem;
             font-size: large;
             width: fit-content;
-            border-style: none;
-            color: white
+            border: none;
+            color: white;
         }
 
         hr {
-            border-style: solid;
             width: 100%;
-            border-color: #c1c1c1;
+            border: solid #c1c1c1 2px;
         }
 
         .food-cards {
@@ -62,8 +59,7 @@ section {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                border-style: solid;
-                border-width: 2px;
+                border: solid 2px;
                 border-radius: 5px;
                 padding: 1rem;
 
@@ -85,9 +81,8 @@ section {
 
                 img {
                     margin: 0.5rem;
-                    border-style: solid;
+                    border: solid 2px;
                     border-radius: 5px;
-                    border-width: 2px;
                     height: 4rem;
                     width: 8rem;
                 }
@@ -126,7 +121,7 @@ section {
 
                 button {
                     color: white;
-                    border-style: none;
+                    border: none;
                     border-radius: 5px;
                     padding: 1rem;
                     padding: 0.7rem;
@@ -139,9 +134,7 @@ section {
                 color: #686666;
                 padding: 0.7rem;
                 font-size: large;
-                border-style: solid;
-                border-width: 2px;
-                border-color: #c1c1c1;
+                border: solid 2px #c1c1c1;
                 border-radius: 5px;
             }
         }
@@ -155,9 +148,7 @@ section {
                 color: #686666;
                 padding: 0.7rem;
                 font-size: large;
-                border-style: solid;
-                border-width: 2px;
-                border-color: #c1c1c1;
+                border: solid 2px #c1c1c1;
                 border-radius: 5px;
             }
 
@@ -177,9 +168,7 @@ section {
                 color: #686666;
                 padding: 0.7rem;
                 font-size: large;
-                border-style: solid;
-                border-width: 2px;
-                border-color: #c1c1c1;
+                border: solid 2px #c1c1c1;                
                 border-radius: 5px;
                 height: 8rem;
             }

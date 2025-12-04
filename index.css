@@ -10,9 +10,7 @@ nav {
   gap: 3rem;
   padding: 1rem;
   align-items: center;
-  border-style: solid;
-  border-color: #f1eded;
-  border-width: 2px;
+  border: solid #f1eded 2px;
   color: #686666;
 }
 nav .app-title {
@@ -41,13 +39,12 @@ section .left-content .new-recipe {
   font-size: large;
   width: -moz-fit-content;
   width: fit-content;
-  border-style: none;
+  border: none;
   color: white;
 }
 section .left-content hr {
-  border-style: solid;
   width: 100%;
-  border-color: #c1c1c1;
+  border: solid #c1c1c1 2px;
 }
 section .left-content .food-cards {
   display: flex;
@@ -59,8 +56,7 @@ section .left-content .food-cards .card {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-style: solid;
-  border-width: 2px;
+  border: solid 2px;
   border-radius: 5px;
   padding: 1rem;
 }
@@ -79,9 +75,8 @@ section .left-content .food-cards .card .food-info .food-description {
 }
 section .left-content .food-cards .card img {
   margin: 0.5rem;
-  border-style: solid;
+  border: solid 2px;
   border-radius: 5px;
-  border-width: 2px;
   height: 4rem;
   width: 8rem;
 }
@@ -112,7 +107,7 @@ section .right-content .recipe-name__buttons__cancel {
 }
 section .right-content .recipe-name__buttons button {
   color: white;
-  border-style: none;
+  border: none;
   border-radius: 5px;
   padding: 1rem;
   padding: 0.7rem;
@@ -124,9 +119,7 @@ section .right-content .recipe-name #name-input {
   color: #686666;
   padding: 0.7rem;
   font-size: large;
-  border-style: solid;
-  border-width: 2px;
-  border-color: #c1c1c1;
+  border: solid 2px #c1c1c1;
   border-radius: 5px;
 }
 section .right-content .url-section {
@@ -138,9 +131,7 @@ section .right-content .url-section #url-input {
   color: #686666;
   padding: 0.7rem;
   font-size: large;
-  border-style: solid;
-  border-width: 2px;
-  border-color: #c1c1c1;
+  border: solid 2px #c1c1c1;
   border-radius: 5px;
 }
 section .right-content .description-section {
@@ -156,9 +147,7 @@ section .right-content .description-section #description-input {
   color: #686666;
   padding: 0.7rem;
   font-size: large;
-  border-style: solid;
-  border-width: 2px;
-  border-color: #c1c1c1;
+  border: solid 2px #c1c1c1;
   border-radius: 5px;
   height: 8rem;
 }
