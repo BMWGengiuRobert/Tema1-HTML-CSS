@@ -7,8 +7,8 @@ body {
 nav {
   background-color: #f8f8f8;
   display: flex;
-  gap: 3rem;
-  padding: 1rem;
+  gap: 32px;
+  padding: 16px;
   align-items: center;
   border: solid #f1eded 2px;
   color: #686666;
@@ -21,21 +21,21 @@ nav .navbar-button {
 }
 
 section {
-  margin-top: 2rem;
+  margin-top: 32px;
   display: flex;
   padding: 0 10%;
-  gap: 2rem;
+  gap: 32px;
 }
 section .left-content {
   width: 40%;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 32px;
 }
 section .left-content .new-recipe {
   background-color: #5cb85c;
-  border-radius: 5px;
-  padding: 0.5rem;
+  border-radius: 4px;
+  padding: 8px;
   font-size: large;
   width: -moz-fit-content;
   width: fit-content;
@@ -49,7 +49,7 @@ section .left-content hr {
 section .left-content .food-cards {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 16px;
   color: #c1c1c1;
 }
 section .left-content .food-cards .card {
@@ -57,11 +57,11 @@ section .left-content .food-cards .card {
   align-items: center;
   justify-content: space-between;
   border: solid 2px;
-  border-radius: 5px;
-  padding: 1rem;
+  border-radius: 4px;
+  padding: 16px;
 }
 section .left-content .food-cards .card .food-info {
-  padding: 0.5rem;
+  padding: 8px;
 }
 section .left-content .food-cards .card .food-info .food-title {
   margin-top: 0;
@@ -74,17 +74,17 @@ section .left-content .food-cards .card .food-info .food-description {
   color: #686666;
 }
 section .left-content .food-cards .card img {
-  margin: 0.5rem;
+  margin: 8px;
   border: solid 2px;
-  border-radius: 5px;
-  height: 4rem;
-  width: 8rem;
+  border-radius: 4px;
+  height: 64px;
+  width: 128px;
 }
 section .right-content {
   width: 60%;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 16px;
 }
 section .right-content span {
   font-size: small;
@@ -93,11 +93,11 @@ section .right-content span {
 section .right-content .recipe-name {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 16px;
 }
 section .right-content .recipe-name__buttons {
   display: flex;
-  gap: 1rem;
+  gap: 16px;
 }
 section .right-content .recipe-name__buttons__save {
   background-color: #95d195;
@@ -108,36 +108,35 @@ section .right-content .recipe-name__buttons__cancel {
 section .right-content .recipe-name__buttons button {
   color: white;
   border: none;
-  border-radius: 5px;
-  padding: 1rem;
-  padding: 0.7rem;
+  border-radius: 4px;
+  padding: 8px;
   width: -moz-fit-content;
   width: fit-content;
   font-size: large;
 }
 section .right-content .recipe-name #name-input {
   color: #686666;
-  padding: 0.7rem;
+  padding: 8px;
   font-size: large;
   border: solid 2px #c1c1c1;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 section .right-content .url-section {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 16px;
 }
 section .right-content .url-section #url-input {
   color: #686666;
-  padding: 0.7rem;
+  padding: 8px;
   font-size: large;
   border: solid 2px #c1c1c1;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 section .right-content .description-section {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 16px;
 }
 section .right-content .description-section img {
   height: auto;
@@ -145,10 +144,10 @@ section .right-content .description-section img {
 }
 section .right-content .description-section #description-input {
   color: #686666;
-  padding: 0.7rem;
+  padding: 8px;
   font-size: large;
   border: solid 2px #c1c1c1;
-  border-radius: 5px;
+  border-radius: 4px;
   height: 8rem;
 }
 section .right-content .ingredients-section {
@@ -157,33 +156,33 @@ section .right-content .ingredients-section {
 }
 section .right-content .ingredients-section .input-ingredients {
   display: flex;
-  gap: 2.5rem;
+  gap: 32px;
   align-items: center;
-  margin-top: 0.5rem;
+  margin-top: 8px;
   width: 90%;
 }
 section .right-content .ingredients-section .input-ingredients input {
   color: #686666;
-  padding: 0.5rem;
+  padding: 8px;
   font-size: large;
   border: 2px solid #c1c1c1;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 section .right-content .ingredients-section .input-ingredients #ingredient-input {
   flex: 1;
 }
 section .right-content .ingredients-section .input-ingredients #amount-input {
-  width: 5rem;
+  width: 64px;
 }
 section .right-content .ingredients-section .input-ingredients .add-amount-button {
   font-size: large;
-  width: 2.5rem;
-  height: 2.5rem;
-  padding: 0.4rem;
+  width: 32px;
+  height: 32px;
+  padding: 8px;
   border: none;
   background-color: #d9534f;
   color: white;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 section .right-content .ingredients-section .input-ingredients:nth-of-type(2) input {
   border-color: red;
@@ -192,16 +191,16 @@ section .right-content .ingredients-section hr {
   border-style: solid;
   width: 100%;
   border-color: #c1c1c1;
-  margin-top: 1.5rem;
+  margin-top: 16px;
 }
 section .right-content .ingredients-section .add-ingredient-button {
   background-color: #5cb85c;
   color: white;
   border: none;
-  border-radius: 5px;
-  padding: 0.7rem;
+  border-radius: 4px;
+  padding: 8px;
   font-size: large;
   width: -moz-fit-content;
   width: fit-content;
-  margin-top: 1rem;
+  margin-top: 16px;
 }/*# sourceMappingURL=index.css.map */
