@@ -14,10 +14,10 @@ nav {
   color: #686666;
 }
 nav .app-title {
-  font-size: x-large;
+  font-size: 24px;
 }
 nav .navbar-button {
-  font-size: small;
+  font-size: 13px;
 }
 
 section {
@@ -36,11 +36,11 @@ section .left-content .new-recipe {
   background-color: #5cb85c;
   border-radius: 4px;
   padding: 8px;
-  font-size: large;
+  font-size: 18px;
   width: -moz-fit-content;
   width: fit-content;
   border: none;
-  color: white;
+  color: #ffffff;
 }
 section .left-content hr {
   width: 100%;
@@ -65,7 +65,7 @@ section .left-content .food-cards .card .food-info {
 }
 section .left-content .food-cards .card .food-info .food-title {
   margin-top: 0;
-  font-size: xx-large;
+  font-size: 32px;
   color: black;
 }
 section .left-content .food-cards .card .food-info .food-description {
@@ -87,7 +87,7 @@ section .right-content {
   gap: 16px;
 }
 section .right-content span {
-  font-size: small;
+  font-size: 13px;
   font-weight: bold;
 }
 section .right-content .recipe-name {
@@ -106,13 +106,13 @@ section .right-content .recipe-name__buttons__cancel {
   background-color: #d9534f;
 }
 section .right-content .recipe-name__buttons button {
-  color: white;
+  color: #ffffff;
   border: none;
   border-radius: 4px;
   padding: 8px;
   width: -moz-fit-content;
   width: fit-content;
-  font-size: large;
+  font-size: 18px;
 }
 section .right-content .recipe-name #name-input {
   color: #686666;
@@ -129,7 +129,7 @@ section .right-content .url-section {
 section .right-content .url-section #url-input {
   color: #686666;
   padding: 8px;
-  font-size: large;
+  font-size: 18px;
   border: solid 2px #c1c1c1;
   border-radius: 4px;
 }
@@ -145,7 +145,7 @@ section .right-content .description-section img {
 section .right-content .description-section #description-input {
   color: #686666;
   padding: 8px;
-  font-size: large;
+  font-size: 18px;
   border: solid 2px #c1c1c1;
   border-radius: 4px;
   height: 8rem;
@@ -175,17 +175,17 @@ section .right-content .ingredients-section .input-ingredients #amount-input {
   width: 64px;
 }
 section .right-content .ingredients-section .input-ingredients .add-amount-button {
-  font-size: large;
+  font-size: 18px;
   width: 32px;
   height: 32px;
   padding: 8px;
   border: none;
   background-color: #d9534f;
-  color: white;
+  color: #ffffff;
   border-radius: 4px;
 }
 section .right-content .ingredients-section .input-ingredients:nth-of-type(2) input {
-  border-color: red;
+  border-color: #ff0000;
 }
 section .right-content .ingredients-section hr {
   border-style: solid;
@@ -195,11 +195,11 @@ section .right-content .ingredients-section hr {
 }
 section .right-content .ingredients-section .add-ingredient-button {
   background-color: #5cb85c;
-  color: white;
+  color: #ffffff;
   border: none;
   border-radius: 4px;
   padding: 8px;
-  font-size: large;
+  font-size: 18px;
   width: -moz-fit-content;
   width: fit-content;
   margin-top: 16px;

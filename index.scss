@@ -14,11 +14,11 @@ nav {
     color: #686666;
 
     .app-title {
-        font-size: x-large;
+        font-size: 24px;
     }
 
     .navbar-button {
-        font-size: small;
+        font-size: 13px;
     }
 }
 
@@ -38,10 +38,10 @@ section {
             background-color: #5cb85c;
             border-radius: 4px;
             padding: 8px;
-            font-size: large;
+            font-size: 18px;
             width: fit-content;
             border: none;
-            color: white;
+            color: #ffffff;
         }
 
         hr {
@@ -68,7 +68,7 @@ section {
 
                     .food-title {
                         margin-top: 0;
-                        font-size: xx-large;
+                        font-size: 32px;
                         color: black;
                     }
 
@@ -98,7 +98,7 @@ section {
         gap: 16px; //if we use here gap: 3rem; the scroll bar appears but looks like the design picture
 
         span {
-            font-size: small;
+            font-size: 13px;
             font-weight: bold;
         }
 
@@ -120,12 +120,12 @@ section {
                 }
 
                 button {
-                    color: white;
+                    color: #ffffff;
                     border: none;
                     border-radius: 4px;
                     padding: 8px;
                     width: fit-content;
-                    font-size: large;
+                    font-size: 18px;
                 }
             }
 
@@ -146,7 +146,7 @@ section {
             #url-input {
                 color: #686666;
                 padding: 8px;
-                font-size: large;
+                font-size: 18px;
                 border: solid 2px #c1c1c1;
                 border-radius: 4px;
             }
@@ -166,7 +166,7 @@ section {
             #description-input {
                 color: #686666;
                 padding: 8px;
-                font-size: large;
+                font-size: 18px;
                 border: solid 2px #c1c1c1;                
                 border-radius: 4px;
                 height: 8rem;
@@ -201,19 +201,19 @@ section {
                 }
 
                 .add-amount-button {
-                    font-size: large;
+                    font-size: 18px;
                     width: 32px;
                     height: 32px;
                     padding: 8px;
                     border: none;
                     background-color: #d9534f;
-                    color: white;
+                    color: #ffffff;
                     border-radius: 4px;
                 }
 
                 &:nth-of-type(2) {
                     input {
-                        border-color: red;
+                        border-color: #ff0000;
                     }
                 }
             }
@@ -227,11 +227,11 @@ section {
 
             .add-ingredient-button {
                 background-color: #5cb85c;
-                color: white;
+                color: #ffffff;
                 border: none;
                 border-radius: 4px;
                 padding: 8px;
-                font-size: large;
+                font-size: 18px;
                 width: fit-content;
                 margin-top: 16px;
             }
