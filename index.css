@@ -10,16 +10,24 @@ ul {
   gap: 32px;
   padding: 16px;
   align-items: center;
-  border: solid #f1eded 2px;
+  border-block: 2px solid #f1eded;
   color: #686666;
   list-style-type: none;
   margin-top: 0;
+  position: relative;
+}
+ul .toggle-mobile-menu {
+  display: none;
+}
+ul .navbar {
+  display: flex;
+  gap: 32px;
+}
+ul .navbar__button {
+  font-size: 13px;
 }
 ul .app-title {
   font-size: 24px;
-}
-ul .navbar-button {
-  font-size: 13px;
 }
 
 section {
@@ -205,4 +213,37 @@ section .right-content .ingredients-section .add-ingredient-button {
   width: -moz-fit-content;
   width: fit-content;
   margin-top: 16px;
+}
+
+@media (max-width: 1200px) {
+  ul {
+    justify-content: space-between;
+  }
+  ul .toggle-mobile-menu {
+    display: block;
+    background-color: #f8f8f8;
+    border: 2px solid #f1eded;
+    border-radius: 4px;
+    padding: 4px 8px;
+    color: #777171;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  ul .navbar {
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 100%;
+    background-color: #f8f8f8;
+    border-block: 2px solid #f1eded;
+    flex-direction: column;
+  }
+  ul .navbar__button {
+    padding: 16px;
+    font-size: 18px;
+  }
+  ul .toggle-mobile-menu:hover + .navbar {
+    display: block;
+  }
 }/*# sourceMappingURL=index.css.map */

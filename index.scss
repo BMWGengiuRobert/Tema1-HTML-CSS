@@ -10,18 +10,29 @@ ul {
     gap: 32px;
     padding: 16px;
     align-items: center;
-    border: solid #f1eded 2px;
+    border-block: 2px solid #f1eded;
     color: #686666;
     list-style-type: none;
     margin-top: 0;
+    position: relative;
+
+    .toggle-mobile-menu {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        gap: 32px;
+
+        &__button {
+            font-size: 13px;
+        }
+    }
 
     .app-title {
         font-size: 24px;
     }
 
-    .navbar-button {
-        font-size: 13px;
-    }
 }
 
 section {
@@ -112,7 +123,7 @@ section {
             &__buttons {
                 display: flex;
                 gap: 16px;
-                
+
                 &__save {
                     background-color: #95d195;
                 }
@@ -169,7 +180,7 @@ section {
                 color: #686666;
                 padding: 8px;
                 font-size: 18px;
-                border: solid 2px #c1c1c1;                
+                border: solid 2px #c1c1c1;
                 border-radius: 4px;
                 height: 8rem;
             }
@@ -177,7 +188,7 @@ section {
 
         .ingredients-section {
             display: flex;
-            flex-direction: column; 
+            flex-direction: column;
 
             .input-ingredients {
                 display: flex;
@@ -224,7 +235,7 @@ section {
                 border-style: solid;
                 width: 100%;
                 border-color: #c1c1c1;
-                margin-top: 16px; 
+                margin-top: 16px;
             }
 
             .add-ingredient-button {
@@ -238,5 +249,43 @@ section {
                 margin-top: 16px;
             }
         }
+    }
+}
+
+@media(max-width: 1200px) {
+    ul {
+        justify-content: space-between;
+
+        .toggle-mobile-menu {
+            display: block;
+            background-color: #f8f8f8;
+            border: 2px solid #f1eded;
+            border-radius: 4px;
+            padding: 4px 8px;
+            color: #777171;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .navbar {
+            display: none;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 100%;
+            background-color: #f8f8f8;
+            border-block: 2px solid #f1eded;
+            flex-direction: column;
+
+            &__button {
+                padding: 16px;
+                font-size: 18px;
+            }
+        }
+
+        .toggle-mobile-menu:hover+.navbar {
+            display: block;
+        }
+
     }
 }
