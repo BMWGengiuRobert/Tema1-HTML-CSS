@@ -232,7 +232,6 @@ section .right-content .ingredients-section .add-ingredient-button {
   ul .navbar {
     display: block;
     opacity: 0;
-    transition: all 0.5s ease-in-out;
     position: absolute;
     width: 100%;
     left: 0;
@@ -247,5 +246,6 @@ section .right-content .ingredients-section .add-ingredient-button {
   }
   ul .toggle-mobile-menu:hover + .navbar {
     opacity: 1;
+    transition: all 0.5s ease-in-out;
   }
 }/*# sourceMappingURL=index.css.map */
