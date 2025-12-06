@@ -229,6 +229,16 @@ section {
                         border-color: #ff0000;
                     }
                 }
+
+                &:nth-of-type(3) {
+                    input {
+                        display: none;
+                    }
+
+                    .add-amount-button {
+                        display: none;
+                    }
+                }
             }
 
             hr {
@@ -243,7 +253,7 @@ section {
                 color: #ffffff;
                 border: none;
                 border-radius: 4px;
-                padding: 8px;
+                padding: 12px;
                 font-size: 18px;
                 width: fit-content;
                 margin-top: 16px;
@@ -287,6 +297,78 @@ section {
         .toggle-mobile-menu:hover+.navbar {
             opacity: 1;
             transition: all 0.5s ease-in-out;
+        }
+
+    }
+
+    section {
+        flex-direction: column;
+        padding: 0 16px;
+
+        .left-content {
+            width: 100%;
+        }
+
+        .right-content {
+            width: 100%;
+
+            .description-section {
+
+                textarea{
+                    max-height: 64px;
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .ingredients-section {
+
+                margin-bottom: 20px;
+
+                .input-ingredients {
+
+                    width: 100%;
+
+                    #ingredient-input {
+                        flex: 1;
+                        width: auto;
+                        min-width: 0;
+                    }
+
+                    #amount-input {
+                        width: 36px;
+                        text-align: center;
+                    }
+
+                    .add-amount-button {
+                        width: 40px;
+                        height: 40px;
+                        flex-shrink: 0;
+                    }
+
+                    &:nth-of-type(2) {
+                        input {
+                            border-color: #c1c1c1;
+                        }
+
+                    }
+
+                    &:nth-of-type(3) {
+                        input {
+                            border-color: #ff0000;
+                            display: block;
+                        }
+
+                        .add-amount-button {
+                            display: block;
+                        }
+                    }
+                }
+            }
+
+
         }
 
     }
