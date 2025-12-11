@@ -68,7 +68,7 @@ section {
             gap: 16px;
             color: #c1c1c1;
 
-            div:hover + .choices{
+            div:hover + .choices, .choices:hover{
                 height: 750px;
                 transition-property: height;
                 transition-duration: 0.5s;
@@ -114,7 +114,7 @@ section {
             display: flex;
             flex-direction: column;
             overflow: hidden;
-            
+
             span {
                 font-size: 16px;
                 font-weight: bold;

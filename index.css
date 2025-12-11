@@ -62,7 +62,7 @@ section .left-content .food-cards {
   gap: 16px;
   color: #c1c1c1;
 }
-section .left-content .food-cards div:hover + .choices {
+section .left-content .food-cards div:hover + .choices, section .left-content .food-cards .choices:hover {
   height: 750px;
   transition-property: height;
   transition-duration: 0.5s;
