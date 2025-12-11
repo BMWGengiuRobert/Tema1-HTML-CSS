@@ -68,6 +68,12 @@ section {
             gap: 16px;
             color: #c1c1c1;
 
+            div:hover + .choices{
+                height: 750px;
+                transition-property: height;
+                transition-duration: 0.5s;
+            }
+
             .card {
                 display: flex;
                 align-items: center;
@@ -100,6 +106,34 @@ section {
                     width: 128px;
                 }
 
+            }
+        }
+
+        .choices {
+            height: 0px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            
+            span {
+                font-size: 16px;
+                font-weight: bold;
+                margin: 8px 0px;
+                color: #5cb85c;
+            }
+
+            label {
+                font-size: 15px;
+                margin-bottom: 8px;
+                color: #000;
+                background-color: #f5deb3;
+                padding: 16px;
+                border-radius: 12px;
+                border: solid 1px #5cb85c;
+            }
+
+            textarea{
+                color: #686666;
             }
         }
     }
@@ -314,7 +348,7 @@ section {
 
             .description-section {
 
-                textarea{
+                textarea {
                     max-height: 64px;
                 }
 
