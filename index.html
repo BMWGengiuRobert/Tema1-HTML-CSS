@@ -6,14 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <nav>
-        <div class="app-title">Recipe Book</div>
-        <div class="navbar-button">Authentificate</div>
-        <div class="navbar-button">Shopping List</div>
-    </nav>
+    <ul>
+        <li class="app-title">Recipe Book</li>
+        <button class="toggle-mobile-menu" aria-label="Toggle Menu">
+            <i class="fa fa-bars"></i>
+        </button>
+        <div class="navbar">
+            <li class="navbar__button">Authentificate</li>
+            <li class="navbar__button">Shopping List</li>
+        </div>
+    </ul>
     <section>
         <div class="left-content">
             <button class="new-recipe">New Recipe</button>
@@ -24,22 +30,38 @@
                         <p class="food-title">Toast</p>
                         <p class="food-description">toast info</p>
                     </div>
-                    <img src="toast.jpg" alt="toast image" />
+                    <img src="./images/toast.jpg" alt="toast image" />
+                </div>
+                <div class="choices">
+                    <span>Alegeti ingredientele:</span>
+                    <label for="ingredient1"><input type="checkbox" name="salata-verde" id="ingredient1"> Salata verde</label>
+                    <label for="ingredient2"><input type="checkbox" name="rosii" id="ingredient2"> Rosii</label>
+                    <label for="ingredient3"><input type="checkbox" name="ceapa-rosie" id="ingredient3"> Ceapa rosie</label>
+                    <label for="ingredient4"><input type="checkbox" name="porumb" id="ingredient4"> Porumb</label>
+                    <span>Alegeti sosul:</span>
+                    <label for="ingredient5"><input type="checkbox" name="tzatziki" id="ingredient5"> Tzatziki</label>
+                    <label for="ingredient6"><input type="checkbox" name="ketchup-dulce" id="ingredient6"> Ketchup dulce</label>
+                    <label for="ingredient7"><input type="checkbox" name="ketchup-picant" id="ingredient7"> Ketchup picant</label>
+                    <span>Doriti tacamuri?</span>
+                    <label for="choice1"><input type="radio" name="da" id="choice1"> Da</label>
+                    <label for="choice2"><input type="radio" name="da" id="choice2"> Nu</label>
+                    <span>Adresa de livrare si contact</span>
+                    <textarea name="adresa-contact" id="adresa-contact">Ex: str Popesti, nr.1, ap 10</textarea>
                 </div>
                 <div class="card">
                     <div class="food-info">
                         <p class="food-title">Avocado</p>
                         <p class="food-description">avocado info</p>
                     </div>
-                    <img src="avocado.jpg" alt="toast image" />
+                    <img src="./images/avocado.jpg" alt="avocado image" />
                 </div>
             </div>
         </div>
         <div class="right-content">
             <div class="recipe-name">
-                <div class="recipe-name-buttons">
-                    <button class="recipe-name-buttons-save">Save</button>
-                    <button class="recipe-name-buttons-cancel">Cancel</button>
+                <div class="recipe-name__buttons">
+                    <button class="recipe-name__buttons__save">Save</button>
+                    <button class="recipe-name__buttons__cancel">Cancel</button>
                 </div>
                 <label type="text" for="name-input"><span>Name</span></label>
                 <input type="text" name="new-recipe-name" id="name-input" value="Fries">
@@ -50,7 +72,7 @@
                     value="https://upload.wikimedia.org/wikipedia/commons/8/83/French_Fries.JPG">
             </div>
             <div class="description-section">
-                <img src="French_Fries.jpg" alt="french fries image" />
+                <img src="./images/French_Fries.jpg" alt="french fries image" />
                 <label type="text" for="description-input"><span>Description</span></label>
                 <textarea name="new-recipe-description" id="description-input">Cartofi</textarea>
             </div>
@@ -58,6 +80,11 @@
                 <div class="input-ingredients">
                     <input type="text" name="recipe-ingredient" id="ingredient-input" value="Cartofi">
                     <input type="text" name="recipe-amount" id="amount-input" value="2">
+                    <button class="add-amount-button">X</button>
+                </div>
+                <div class="input-ingredients">
+                    <input type="text" name="recipe-ingredient" id="ingredient-input">
+                    <input type="text" name="recipe-amount" id="amount-input">
                     <button class="add-amount-button">X</button>
                 </div>
                 <div class="input-ingredients">

@@ -4,75 +4,90 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-nav {
+ul {
     background-color: #f8f8f8;
     display: flex;
-    gap: 3rem;
-    padding: 1rem;
+    gap: 32px;
+    padding: 16px;
     align-items: center;
-    border-style: solid;
-    border-color: #f1eded;
-    border-width: 2px;
+    border-block: 2px solid #f1eded;
     color: #686666;
+    list-style-type: none;
+    margin-top: 0;
+    position: relative;
+
+    .toggle-mobile-menu {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        gap: 32px;
+
+        &__button {
+            font-size: 13px;
+        }
+    }
 
     .app-title {
-        font-size: x-large;
+        font-size: 24px;
     }
 
-    .navbar-button {
-        font-size: small;
-    }
 }
 
 section {
-    margin-top: 2rem;
+    margin-top: 32px;
     display: flex;
     padding: 0 10%;
-    gap: 2rem;
+    gap: 32px;
 
     .left-content {
         width: 40%;
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        gap: 32px;
 
         .new-recipe {
             background-color: #5cb85c;
-            border-radius: 5px;
-            padding: 0.5rem;
-            font-size: large;
+            border-radius: 4px;
+            padding: 8px;
+            font-size: 18px;
             width: fit-content;
-            border-style: none;
-            color: white
+            border: none;
+            color: #ffffff;
         }
 
         hr {
-            border-style: solid;
             width: 100%;
-            border-color: #c1c1c1;
+            border: solid #c1c1c1 2px;
         }
 
         .food-cards {
             display: flex;
             flex-direction: column;
-            gap: 1rem;
+            gap: 16px;
             color: #c1c1c1;
+
+            div:hover + .choices, .choices:hover{
+                height: 750px;
+                transition-property: height;
+                transition-duration: 0.5s;
+            }
 
             .card {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                border-style: solid;
-                border-width: 2px;
-                border-radius: 5px;
-                padding: 1rem;
+                border: solid 2px;
+                border-radius: 4px;
+                padding: 16px;
 
                 .food-info {
-                    padding: 0.5rem;
+                    padding: 8px;
 
                     .food-title {
                         margin-top: 0;
-                        font-size: xx-large;
+                        font-size: 32px;
                         color: black;
                     }
 
@@ -84,14 +99,41 @@ section {
                 }
 
                 img {
-                    margin: 0.5rem;
-                    border-style: solid;
-                    border-radius: 5px;
-                    border-width: 2px;
-                    height: 4rem;
-                    width: 8rem;
+                    margin: 8px;
+                    border: solid 2px;
+                    border-radius: 4px;
+                    height: 64px;
+                    width: 128px;
                 }
 
+            }
+        }
+
+        .choices {
+            height: 0px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+
+            span {
+                font-size: 16px;
+                font-weight: bold;
+                margin: 8px 0px;
+                color: #5cb85c;
+            }
+
+            label {
+                font-size: 15px;
+                margin-bottom: 8px;
+                color: #000;
+                background-color: #f5deb3;
+                padding: 16px;
+                border-radius: 12px;
+                border: solid 1px #5cb85c;
+            }
+
+            textarea{
+                color: #686666;
             }
         }
     }
@@ -100,65 +142,60 @@ section {
         width: 60%;
         display: flex;
         flex-direction: column;
-        gap: 1rem; //if we use here gap: 3rem; the scroll bar appears but looks like the design picture
+        gap: 16px; //if we use here gap: 3rem; the scroll bar appears but looks like the design picture
 
         span {
-            font-size: small;
+            font-size: 13px;
             font-weight: bold;
         }
 
         .recipe-name {
             display: flex;
             flex-direction: column;
-            gap: 1rem;
+            gap: 16px;
 
-            .recipe-name-buttons {
+            &__buttons {
                 display: flex;
-                gap: 1rem;
+                gap: 16px;
 
-                .recipe-name-buttons-save {
+                &__save {
                     background-color: #95d195;
                 }
 
-                .recipe-name-buttons-cancel {
+                &__cancel {
                     background-color: #d9534f;
                 }
 
                 button {
-                    color: white;
-                    border-style: none;
-                    border-radius: 5px;
-                    padding: 1rem;
-                    padding: 0.7rem;
+                    color: #ffffff;
+                    border: none;
+                    border-radius: 4px;
+                    padding: 8px;
                     width: fit-content;
-                    font-size: large;
+                    font-size: 18px;
                 }
             }
 
             #name-input {
                 color: #686666;
-                padding: 0.7rem;
+                padding: 8px;
                 font-size: large;
-                border-style: solid;
-                border-width: 2px;
-                border-color: #c1c1c1;
-                border-radius: 5px;
+                border: solid 2px #c1c1c1;
+                border-radius: 4px;
             }
         }
 
         .url-section {
             display: flex;
             flex-direction: column;
-            gap: 1rem;
+            gap: 16px;
 
             #url-input {
                 color: #686666;
-                padding: 0.7rem;
-                font-size: large;
-                border-style: solid;
-                border-width: 2px;
-                border-color: #c1c1c1;
-                border-radius: 5px;
+                padding: 8px;
+                font-size: 18px;
+                border: solid 2px #c1c1c1;
+                border-radius: 4px;
             }
 
         }
@@ -166,7 +203,7 @@ section {
         .description-section {
             display: flex;
             flex-direction: column;
-            gap: 1rem;
+            gap: 16px;
 
             img {
                 height: auto;
@@ -175,33 +212,31 @@ section {
 
             #description-input {
                 color: #686666;
-                padding: 0.7rem;
-                font-size: large;
-                border-style: solid;
-                border-width: 2px;
-                border-color: #c1c1c1;
-                border-radius: 5px;
+                padding: 8px;
+                font-size: 18px;
+                border: solid 2px #c1c1c1;
+                border-radius: 4px;
                 height: 8rem;
             }
         }
 
         .ingredients-section {
             display: flex;
-            flex-direction: column; 
+            flex-direction: column;
 
             .input-ingredients {
                 display: flex;
-                gap: 2.5rem;
+                gap: 32px;
                 align-items: center;
-                margin-top: 0.5rem;
+                margin-top: 8px;
                 width: 90%;
 
                 input {
                     color: #686666;
-                    padding: 0.5rem;
+                    padding: 8px;
                     font-size: large;
                     border: 2px solid #c1c1c1;
-                    border-radius: 5px;
+                    border-radius: 4px;
                 }
 
                 #ingredient-input {
@@ -209,23 +244,33 @@ section {
                 }
 
                 #amount-input {
-                    width: 5rem;
+                    width: 64px;
                 }
 
                 .add-amount-button {
-                    font-size: large;
-                    width: 2.5rem;
-                    height: 2.5rem;
-                    padding: 0.4rem;
+                    font-size: 18px;
+                    width: 32px;
+                    height: 32px;
+                    padding: 8px;
                     border: none;
                     background-color: #d9534f;
-                    color: white;
-                    border-radius: 5px;
+                    color: #ffffff;
+                    border-radius: 4px;
                 }
 
                 &:nth-of-type(2) {
                     input {
-                        border-color: red;
+                        border-color: #ff0000;
+                    }
+                }
+
+                &:nth-of-type(3) {
+                    input {
+                        display: none;
+                    }
+
+                    .add-amount-button {
+                        display: none;
                     }
                 }
             }
@@ -234,19 +279,130 @@ section {
                 border-style: solid;
                 width: 100%;
                 border-color: #c1c1c1;
-                margin-top: 1.5rem; 
+                margin-top: 16px;
             }
 
             .add-ingredient-button {
                 background-color: #5cb85c;
-                color: white;
+                color: #ffffff;
                 border: none;
-                border-radius: 5px;
-                padding: 0.7rem;
-                font-size: large;
+                border-radius: 4px;
+                padding: 12px;
+                font-size: 18px;
                 width: fit-content;
-                margin-top: 1rem;
+                margin-top: 16px;
             }
         }
+    }
+}
+
+@media(max-width: 1200px) {
+    ul {
+        justify-content: space-between;
+
+        .toggle-mobile-menu {
+            display: block;
+            background-color: #f8f8f8;
+            border: 2px solid #f1eded;
+            border-radius: 4px;
+            padding: 4px 8px;
+            color: #777171;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .navbar {
+            display: block;
+            opacity: 0;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 100%;
+            background-color: #f8f8f8;
+            border-block: 2px solid #f1eded;
+            flex-direction: column;
+
+            &__button {
+                padding: 16px;
+                font-size: 18px;
+            }
+        }
+
+        .toggle-mobile-menu:hover+.navbar {
+            opacity: 1;
+            transition: all 0.5s ease-in-out;
+        }
+
+    }
+
+    section {
+        flex-direction: column;
+        padding: 0 16px;
+
+        .left-content {
+            width: 100%;
+        }
+
+        .right-content {
+            width: 100%;
+
+            .description-section {
+
+                textarea {
+                    max-height: 64px;
+                }
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .ingredients-section {
+
+                margin-bottom: 20px;
+
+                .input-ingredients {
+
+                    width: 100%;
+
+                    #ingredient-input {
+                        flex: 1;
+                        width: 100%;
+                    }
+
+                    #amount-input {
+                        width: 36px;
+                        text-align: center;
+                    }
+
+                    .add-amount-button {
+                        width: 40px;
+                        height: 40px;
+                        flex-shrink: 0;
+                    }
+
+                    &:nth-of-type(2) {
+                        input {
+                            border-color: #c1c1c1;
+                        }
+
+                    }
+
+                    &:nth-of-type(3) {
+                        input {
+                            border-color: #ff0000;
+                            display: block;
+                        }
+
+                        .add-amount-button {
+                            display: block;
+                        }
+                    }
+                }
+            }
+
+
+        }
+
     }
 }
